@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 108.782 s <<< FAILURE! - in TestSuite
+errorProductValidation(com.ecommerce.testcases.ErrorValidationTest)  Time elapsed: 4.198 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.ecommerce.testcases.ErrorValidationTest.errorProductValidation(ErrorValidationTest.java:33)
+
+submitOrder(com.ecommerce.testcases.SubmitOrderTest)  Time elapsed: 4.141 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button _ngcontent-ivl-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1668, 27). Other element would receive the click: <div _ngcontent-ivl-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
+  (Session info: chrome=107.0.5304.107)
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0bc99458e2f4445a494b7f608c2734e0, clickElement {id=75fa548c-cb1e-49e0-93e3-14f203657e9f}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\swiss\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59893}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59893/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (0bc99458e2f4445a494b7f608c2734e0)] -> css selector: [routerlink*='cart']]
+Session ID: 0bc99458e2f4445a494b7f608c2734e0
+	at com.ecommerce.testcases.SubmitOrderTest.submitOrder(SubmitOrderTest.java:27)
+
